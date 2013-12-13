@@ -24,9 +24,11 @@
   },
   "devDependencies": {
     "mocha": "~1.12",
-    "expect.js": "~0.2.0"
+    "expect.js": "~0.2.0",
+    "istanbul":"~0.1.46"
   },
   "scripts": {
-    "test": "mocha test/* --reporter spec"
+    "test": "mocha test/* --reporter spec",
+    "coverage": "istanbul cover _mocha -- test/* --reporter spec"
   }
 }
